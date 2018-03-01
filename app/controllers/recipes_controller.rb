@@ -14,7 +14,7 @@ class RecipesController < ApplicationController
   end
 
   def create
-    
+
     @recipe = Recipe.create(recipe_params)
     raise @recipe.inspect
     redirect_to recipe_path(@recipe)
